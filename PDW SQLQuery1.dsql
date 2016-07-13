@@ -1,0 +1,5 @@
+﻿Select count (*) FROM dbo.TableGL2
+
+--AS SELECT TOP (10000000) * FROM TableGL2 
+SELECT TOP (10000000) CompanyCode, NAV from TableGL2
+

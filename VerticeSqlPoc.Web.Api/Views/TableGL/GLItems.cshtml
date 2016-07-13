@@ -1,0 +1,98 @@
+﻿@model VerticeSqlPoc.Web.Api.Models.GLItemsForCompany
+
+@{
+    ViewBag.Title = "GLItems";
+}
+
+<h2>@Html.DisplayFor(model => model.CompanyCode) - GL Items</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].DateStr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].DateEOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].DateStrEOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].DateStrBOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].CompanyCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].SecurityNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].CostBasis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].NAV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].NAVTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].PerformanceGain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GLItems[0].ActiveValue)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.GLItems)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateEOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStrEOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStrBOM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecurityNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostBasis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAVTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PerformanceGain)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActiveValue)
+            </td>
+        </tr>
+    }
+    <tr><td colspan="5">@ViewBag.Msg</td></tr>
+</table>
+
+@Html.ActionLink("Back to List", "Index")
+
+
+
+

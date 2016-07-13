@@ -1,0 +1,45 @@
+﻿@model VerticeSqlPoc.Web.Api.Models.AvgCapitalBalanceForCompany
+@{
+    ViewBag.Title = "AvgCapitalBalance";
+}
+
+<h2>@Html.DisplayFor(model => model.CompanyCode) - Average Capital Balance By Month/Year</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Month/Year
+        </th>
+        <th>
+            Nav Sum
+        </th>
+        <th>
+            NumGLItems
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Balances)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Month) / @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NavSum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumGLItems)
+            </td>
+        </tr>
+    }
+    <tr><td colspan="5">@ViewBag.Msg</td></tr>
+</table>
+
+@Html.ActionLink("Back to List", "Index")
+
+
+
+
+
+

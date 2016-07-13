@@ -1,0 +1,6 @@
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\bin\Debug\VerticeSqlPoc.Test.dll
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\bin\Debug\VerticeSqlPoc.Test.pdb
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\obj\Debug\VerticeSqlPoc.Test.csprojResolveAssemblyReference.cache
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\obj\Debug\VerticeSqlPoc.Test.dll
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Test\obj\Debug\VerticeSqlPoc.Test.pdb

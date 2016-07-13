@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PrimarySql-Web.config Connection String" description="PrimarySql Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:tolgadwserver.database.windows.net,1433;Database=tolgadwdb;User ID=csa;Password=PODlogin1;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mieubank\\Source\\Repos\\SQL\ POC\\VerticeSqlPoc\\VerticeSqlPoc\.Web\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PrimarySql']/@connectionString" />
+  </parameter>
+</parameters>

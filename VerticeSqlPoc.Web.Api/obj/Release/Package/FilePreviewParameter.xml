@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="verticesqlpocweb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mieubank\\Source\\Repos\\SQL\ POC\\VerticeSqlPoc\\VerticeSqlPoc\.Web\.Api\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\mieubank\\Source\\Repos\\SQL\ POC\\VerticeSqlPoc\\VerticeSqlPoc\.Web\.Api\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="PrimarySql-Web.config Connection String" description="" value="Data Source=tcp:13.82.24.97,1433;Initial Catalog=XMLPERFdb;User ID=csa;Password=PODlogin1;Connect Timeout=30" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mieubank\\Source\\Repos\\SQL\ POC\\VerticeSqlPoc\\VerticeSqlPoc\.Web\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PrimarySql']/@connectionString" />
+  </parameter>
+</parameters>

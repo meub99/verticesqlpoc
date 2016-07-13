@@ -1,0 +1,6 @@
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\bin\Debug\VerticeSqlPoc.Console.exe.config
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\bin\Debug\VerticeSqlPoc.Console.exe
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\bin\Debug\VerticeSqlPoc.Console.pdb
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\obj\Debug\VerticeSqlPoc.Console.csprojResolveAssemblyReference.cache
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\obj\Debug\VerticeSqlPoc.Console.exe
+C:\Users\mieubank\Source\Repos\SQL POC\VerticeSqlPoc\VerticeSqlPoc.Console\obj\Debug\VerticeSqlPoc.Console.pdb

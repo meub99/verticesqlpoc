@@ -1,0 +1,46 @@
+﻿
+@model IEnumerable<VerticeSqlPoc.Web.Services.Models.CompanyInfo>
+
+@{
+    ViewBag.Title = "Company Codes";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            @Html.ActionLink("Clear Entire Cache", "ClearCache")
+        </td>
+    </tr>
+</table>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumGLItems)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumGLItems)
+            </td>
+            <td>                
+                @Html.ActionLink("Avg Capital Balance", "AvgCapitalBalance", new { id = item.CompanyCode }) |
+                @Html.ActionLink("GLItems", "GLItems", new { id = item.CompanyCode }) |               
+            </td>
+        </tr>
+    }
+    <tr><td colspan="5">@ViewBag.Msg</td></tr>
+</table>
+
