@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
+//Proof of Concept, not for production
 namespace VerticeSqlPoc.Web.Api.Controllers
 {
     public class AverageCapitalBalanceController : ApiController
@@ -57,13 +58,15 @@ namespace VerticeSqlPoc.Web.Api.Controllers
 
         private List<CompanyInfo> GetCompanyCodes(bool useDatabase)
         {
-            if (useDatabase)
+            if (useDatabase) //returns sum of NAV via SQL query
             {
                 //return GetFromCache<CompanyInfo>(GLITEMS_COMPANYCODES, () => { return SqlService.GetCompanyCodes().ToList(); });
                 return SqlService.GetCompanyCodes().ToList();
                 //return avgCapitalBalanceService.Calculate(glItems).ToList();
             }
-            else
+            else 
+            //returns results of GetCompanyCodes to List and then calls Sql to get all items in the table
+            //for each CompanyCode in the List and passes it to the AvgCapitalBalanceService to calculate sum of NAV for each CompanyCode
             {
                 List<CompanyInfo> companyInfos = SqlService.GetCompanyCodes().ToList();
 

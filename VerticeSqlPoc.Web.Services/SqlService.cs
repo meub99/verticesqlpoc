@@ -10,7 +10,7 @@ using VerticeSqlPoc.Web.Services.Models;
 using VerticeSqlPoc.Web.Services.Models.SQL;
 using System.Data;
 
-
+//Proof of Concept, not intended for production
 namespace VerticeSqlPoc.Web.Services
 {
 
@@ -47,6 +47,7 @@ namespace VerticeSqlPoc.Web.Services
         //    return connection.Query<CompanyInfo>("SELECT CompanyCode, COUNT(*) AS NumGlItems FROM TableGL Group By CompanyCode");
         //}
 
+        // returns Sum of NAV
         public IEnumerable<CompanyInfo> GetCompanyCodes()
         {
             return connection.Query<CompanyInfo>("SELECT CompanyCode, SUM(NAV) As NavSUM, COUNT(*) AS NumGlItems FROM TableGL2 Group By CompanyCode");

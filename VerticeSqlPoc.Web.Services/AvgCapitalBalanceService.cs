@@ -8,10 +8,13 @@ using VerticeSqlPoc.Web.Services.Interfaces;
 using VerticeSqlPoc.Web.Services.Models;
 using VerticeSqlPoc.Web.Services.Models.SQL;
 
+//Proof of Concept, not intended for production
+
 namespace VerticeSqlPoc.Web.Services
 {
     public class AvgCapitalBalanceService : IAvgCapitalBalanceService
     {
+        //Calculates sum of NAV from TableGL and groups by CompanyCode, Month, Year
         public IEnumerable<AvgCapitalBalance> Calculate(List<Models.SQL.TableGL> glItems)
         {
             return from gl in glItems
@@ -20,6 +23,7 @@ namespace VerticeSqlPoc.Web.Services
                    select new AvgCapitalBalance() { CompanyCode = cc.Key.CompanyCode, Month = cc.Key.Month, Year = cc.Key.Year, NavSum = cc.Sum(r => r.NAV), NumGLItems = cc.Count() };
         }
 
+        //Calculates the sum of NAV from TableGL
         public IEnumerable<CompanyInfo> GetCompanyCodes(List<TableGL> glItems)
         {
             return from gl in glItems

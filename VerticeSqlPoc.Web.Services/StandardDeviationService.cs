@@ -11,6 +11,8 @@ using VerticeSqlPoc.Web.Services;
 using System.Drawing;
 using System.Collections.Concurrent;
 
+//Proof of Concept, not intended for production
+
 namespace VerticeSqlPoc.Web.Services
 {
     public class StandardDeviationService : IStandardDeviationService

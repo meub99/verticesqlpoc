@@ -6,6 +6,7 @@ using VerticeSqlPoc.Web.Services.Models;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
+//Proof of Concept, not intended for production
 namespace VerticeSqlPoc.Web.Services
 {
     public class RedisService : IRedisService
